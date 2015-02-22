@@ -1,0 +1,32 @@
+{
+    "name": "dmzx/countdown",
+    "type": "phpbb-extension",
+    "description": "This extension will add countdown to your board",
+    "homepage": "http://www.dmzx-web.net",
+    "version": "0.0.1",
+    "time": "2015-02-07",
+	"keywords": ["phpbb", "extension", "countdown"],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "dmzx",
+            "homepage": "http://www.dmzx-web.net",
+			"email": "info@dmzx-web.net",
+            "role": "Developer"
+        },
+		{
+			"name": "Stoker",
+			"homepage": "http://www.phpbb3bbcodes.com",
+			"role": "Author"
+		}
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "extra": {
+        "display-name": "Countdown",
+        "soft-require": {
+           "phpbb/phpbb": "3.1.*"
+        }
+    }
+}

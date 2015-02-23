@@ -7,52 +7,20 @@
 *
 */
 namespace dmzx\countdown\acp;
+
 class acp_countdown_module
 {
-/** @var \phpbb\config\config */
-protected $config;
-/** @var \phpbb\config\db_text */
-protected $config_text;
-/** @var \phpbb\db\driver\driver_interface */
-protected $db;
-/** @var \phpbb\log\log */
-protected $log;
-/** @var \phpbb\request\request */
-protected $request;
-/** @var \phpbb\template\template */
-protected $template;
-/** @var \phpbb\user */
-protected $user;
-/** @var ContainerInterface */
-protected $phpbb_container;
-/** @var string */
-protected $phpbb_root_path;
-/** @var string */
-protected $php_ext;
-/** @var string */
-public $u_action;
-public function main($id, $mode)
-{
-global $config, $db, $request, $template, $user, $phpbb_root_path, $phpEx, $table_prefix;
-$this->config = $config;
-//$this->config_text = $phpbb_container->get('config_text');
-$this->db = $db;
-$this->request = $request;
-$this->template = $template;
-$this->user = $user;
-$this->phpbb_root_path = $phpbb_root_path;
-$this->php_ext = $phpEx;
-// Add the wpm ACP lang file
-$user->add_lang_ext('dmzx/countdown', 'info_acp_countdown');
-// Load a template from adm/style for our ACP page
-$this->tpl_name = 'acp_countdown_config';
-// Set the page title for our ACP page
-$this->page_title = 'ACP_COUNTDOWN';
-// Define the name of the form for use as a form key
-$form_name = 'acp_countdown_module';
-add_form_key($form_name);
+var $u_action;
 
+	function main($id, $mode)
+	{
+		global $db, $user, $auth, $template, $cache;
+		global $config, $phpbb_root_path, $phpbb_admin_path, $phpEx;
 
+		$user->add_lang_ext('dmzx/countdown', 'info_acp_countdown');
+		$this->tpl_name = 'acp_countdown_config';
+		$this->page_title = $user->lang['COUNTDOWN_CONFIG'];
+		add_form_key('acp_countdown_config');
 		
 		$submit = (isset($_POST['submit'])) ? true : false;
 		if ($submit)

@@ -55,9 +55,9 @@ $lang = array_merge($lang, array(
 		
 		// BEGIN Countdown settings	
 		'ACP_COUNTDOWN_CONFIG'				=> 'PhpBB Countdown',
-		'ACP_COUNTDOWN_CONFIG_EXPLAIN'		=> 'This is configuration page for the Countdown Mod by Stoker',
+		'ACP_COUNTDOWN_CONFIG_EXPLAIN'		=> 'This is configuration page for the Countdown Ext. by Stoker and dmzx',
 		'COUNTDOWN_VERSION'					=> 'Version',
-		'COUNTDOWN_DONATE'					=> 'Please consider a <a href="http://www.phpbb3bbcodes.com/donate.php"><strong>Donation</strong></a> if you like the MOD',
+		'COUNTDOWN_DONATE'					=> 'Please consider a <a href="http://www.phpbb3bbcodes.com/donate.php"><strong>Donation</strong></a> if you like the Extension',
 		'ACP_COUNTDOWN_CONFIG_SET'			=> 'Configuration',	
 		'COUNTDOWN_CONFIG_SAVED'			=> 'PhpBB Countdown settings saved',	
 		

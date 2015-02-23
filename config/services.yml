@@ -4,5 +4,6 @@ services:
         arguments:
             - @controller.helper
             - @template		
+            - @config		
         tags:
             - { name: event.listener }

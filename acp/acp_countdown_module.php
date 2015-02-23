@@ -16,30 +16,29 @@ var $u_action;
 
 	function main($id, $mode)
 	{
-		global $db, $user, $auth, $template, $cache;
+		global $db, $user, $auth, $template, $cache, $request;
 		global $config, $phpbb_root_path, $phpbb_admin_path, $phpEx;
 
-		$user->add_lang_ext('dmzx/countdown', 'info_acp_countdown');
 		$this->tpl_name = 'acp_countdown_config';
 		$this->page_title = $user->lang['COUNTDOWN_CONFIG'];
 		add_form_key('acp_countdown_config');
 		
-		$submit = (isset($_POST['submit'])) ? true : false;
+		$submit = $request->is_set_post('submit');
 		if ($submit)
 		{
 			if (!check_form_key('acp_countdown_config'))
 			{
 				trigger_error('FORM_INVALID');
 			}
-			set_config('countdown_enable', request_var('countdown_enable', 0));
-			set_config('countdown_testmode', request_var('countdown_testmode', 0));
-			set_config('countdown_direction', request_var('countdown_direction', 0));
-			set_config('countdown_date', request_var('countdown_date', ''));
-			set_config('countdown_offset_enable', request_var('countdown_offset_enable', 0));
-			set_config('countdown_year', request_var('countdown_year', 0));
-			set_config('countdown_month', request_var('countdown_month', 0));
-			set_config('countdown_text', request_var('countdown_text', ''));
-			set_config('countdown_complete', request_var('countdown_complete', ''));
+			set_config('countdown_enable', $request->variable('countdown_enable', 0));
+			set_config('countdown_testmode', $request->variable('countdown_testmode', 0));
+			set_config('countdown_direction', $request->variable('countdown_direction', 0));
+			set_config('countdown_date', $request->variable('countdown_date', ''));
+			set_config('countdown_offset_enable', $request->variable('countdown_offset_enable', 0));
+			set_config('countdown_year', $request->variable('countdown_year', 0));
+			set_config('countdown_month', $request->variable('countdown_month', 0));
+			set_config('countdown_text', $request->variable('countdown_text', ''));
+			set_config('countdown_complete', $request->variable('countdown_complete', ''));
 
 			trigger_error($user->lang['COUNTDOWN_CONFIG_SAVED'] . adm_back_link($this->u_action));
 		}

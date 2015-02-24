@@ -10,7 +10,7 @@
 
 namespace dmzx\countdown\acp;
 
-class acp_countdown_module
+class countdown_module
 {
 var $u_action;
 

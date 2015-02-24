@@ -10,18 +10,15 @@
 
 namespace dmzx\countdown\acp;
 
-class acp_countdown_info
+class countdown_info
  {
     function module()
     {
          return array(
-			'filename'	=> '\dmzx\countdown\acp\acp_countdown_module',
+			'filename'	=> '\dmzx\countdown\acp\countdown_module',
 			'title'		=> 'ACP_COUNTDOWN',
-			'version'	=> '1.0.1',
 			'modes'		=> array(
-				'config'	=> array('title' => 'ACP_COUNTDOWN_CONFIG', 
-				'auth' => 'ext_dmzx/countdown && acl_a_board', 
-				'cat' => array('ACP_COUNTDOWN')),
+			'config'	=> array('title' => 'ACP_COUNTDOWN_CONFIG', 'auth' => 'ext_dmzx/countdown && acl_a_board', 'cat' => array('ACP_COUNTDOWN')),
 			),
 		);
 	}

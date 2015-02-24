@@ -22,7 +22,7 @@ class countdown_schema extends \phpbb\db\migration\migration
 			array('config.add', array('countdown_date', '')),
 			array('config.add', array('countdown_text', '')),
 			array('config.add', array('countdown_complete', '')),
-			
+			array('config.add', array('countdown_version', '1.0.1')),
 		    array('config.add', array('countdown_testmode', '')),
 			array('config.add', array('countdown_year', '')),
 			array('config.add', array('countdown_offset_enable', '')),

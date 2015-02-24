@@ -20,6 +20,7 @@ class countdown_module extends \phpbb\db\migration\migration
 			array('module.add', array(
 				'acp', 'ACP_COUNTDOWN', array(
 					'module_basename'	=> '\dmzx\countdown\acp\acp_countdown_module',
+					'module_langname'	=> 'COUNTDOWN_CONFIG',
 					'modes'	            => array('overview'),
 					'module_auth'		=> 'acl_a_board',
 				),

@@ -30,15 +30,15 @@ var $u_action;
 			{
 				trigger_error('FORM_INVALID');
 			}
-			set_config('countdown_enable', $request->variable('countdown_enable', 0));
-			set_config('countdown_testmode', $request->variable('countdown_testmode', 0));
-			set_config('countdown_direction', $request->variable('countdown_direction', 0));
-			set_config('countdown_date', $request->variable('countdown_date', ''));
-			set_config('countdown_offset_enable', $request->variable('countdown_offset_enable', 0));
-			set_config('countdown_year', $request->variable('countdown_year', 0));
-			set_config('countdown_month', $request->variable('countdown_month', 0));
-			set_config('countdown_text', $request->variable('countdown_text', ''));
-			set_config('countdown_complete', $request->variable('countdown_complete', ''));
+			$config->set('countdown_enable', $request->variable('countdown_enable', 0));
+			$config->set('countdown_testmode', $request->variable('countdown_testmode', 0));
+			$config->set('countdown_direction', $request->variable('countdown_direction', 0));
+			$config->set('countdown_date', $request->variable('countdown_date', ''));
+			$config->set('countdown_offset_enable', $request->variable('countdown_offset_enable', 0));
+			$config->set('countdown_year', $request->variable('countdown_year', 0));
+			$config->set('countdown_month', $request->variable('countdown_month', 0));
+			$config->set('countdown_text', $request->variable('countdown_text', ''));
+			$config->set('countdown_complete', $request->variable('countdown_complete', ''));
 
 			trigger_error($user->lang['COUNTDOWN_CONFIG_SAVED'] . adm_back_link($this->u_action));
 		}

@@ -27,6 +27,11 @@
         "display-name": "PhpBB Countdown",
         "soft-require": {
            "phpbb/phpbb": "3.1.*"
+        },
+        "version-check": {
+            "host": "www.phpbb.com",
+            "directory": "/customise/db/extension/phpbb_countdown_5",
+            "filename": "version_check"
         }
     }
 }

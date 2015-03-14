@@ -8,7 +8,6 @@
 *
 */
 
-
 /**
 * DO NOT CHANGE
 */
@@ -56,14 +55,14 @@ $lang = array_merge($lang, array(
 	'UNINSTALL_COUNTDOWN_CONFIRM'		=> 'Etes vous préts pour Désinstaller PhpBB Countdown? Le paramétrages et les data sauvegardés par cette ext. seront effacés!',
 	'UPDATE_COUNTDOWN'					=> 'Mise à jour de PhpBB Countdown',
 	'UPDATE_COUNTDOWN_CONFIRM'			=> 'Etes vous préts pour mettre à jour de PhpBB Countdown Ext.?',
-		
+
 	'ACP_COUNTDOWN_CONFIG'				=> 'PhpBB Countdown',
 	'ACP_COUNTDOWN_CONFIG_EXPLAIN'		=> 'Page de configuration pour Countdown extension par <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a>. Author Stoker.',
 	'COUNTDOWN_VERSION'					=> 'Version',
 	'COUNTDOWN_DONATE'					=> 'Considerez un <a href="http://www.phpbb3bbcodes.com/donate.php"><strong>Donation</strong></a> si vous aimez l Extension',
-	'ACP_COUNTDOWN_CONFIG_SET'			=> 'Configuration',	
-	'COUNTDOWN_CONFIG_SAVED'			=> 'PhpBB Countdown configuration sauvé',	
-		
+	'ACP_COUNTDOWN_CONFIG_SET'			=> 'Configuration',
+	'COUNTDOWN_CONFIG_SAVED'			=> 'PhpBB Countdown configuration sauvé',
+
 	'COUNTDOWN_ENABLE'					=> 'Activer le countdown',
 	'COUNTDOWN_ENABLE_EXPLAIN'			=> 'Activer ou Desactiver PhpBB Countdown',
 	'COUNTDOWN_DIRECTION' 				=> 'Type de Countdown',

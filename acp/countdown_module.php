@@ -22,7 +22,7 @@ var $u_action;
 		$this->tpl_name = 'acp_countdown_config';
 		$this->page_title = $user->lang['COUNTDOWN_CONFIG'];
 		add_form_key('acp_countdown_config');
-		
+
 		$submit = $request->is_set_post('submit');
 		if ($submit)
 		{

@@ -8,7 +8,6 @@
 *
 */
 
-
 /**
 * DO NOT CHANGE
 */
@@ -55,14 +54,14 @@ $lang = array_merge($lang, array(
 	'UNINSTALL_COUNTDOWN_CONFIRM'		=> 'Ben je klaar om PhpBB Countdown te deinstalleren? alle instellingen en opgeslagen data van deze extensie, zullen worden verwijderd!',
 	'UPDATE_COUNTDOWN'					=> 'Update PhpBB Countdown',
 	'UPDATE_COUNTDOWN_CONFIRM'			=> 'Ben je klaar om de PhpBB Countdown extensie te updaten?',
-		
+
 	'ACP_COUNTDOWN_CONFIG'				=> 'PhpBB Countdown',
 	'ACP_COUNTDOWN_CONFIG_EXPLAIN'		=> 'Dit is de configuratie pagina van de PhpBB Countdown extensie, die gemaakt is door <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a>. en de auteur is <strong>Stoker</strong>.',
 	'COUNTDOWN_VERSION'					=> 'Versie',
 	'COUNTDOWN_DONATE'					=> 'Overweeg om een eventuele <a href="http://www.phpbb3bbcodes.com/donate.php"><strong>donatie te doen</strong></a> als je deze extensie leuk vindt.',
-	'ACP_COUNTDOWN_CONFIG_SET'			=> 'Configuratie',	
-	'COUNTDOWN_CONFIG_SAVED'			=> 'PhpBB Countdown instellingen zijn nu opgeslagen',	
-		
+	'ACP_COUNTDOWN_CONFIG_SET'			=> 'Configuratie',
+	'COUNTDOWN_CONFIG_SAVED'			=> 'PhpBB Countdown instellingen zijn nu opgeslagen',
+
 	'COUNTDOWN_ENABLE'					=> 'Inschakelen Countdown',
 	'COUNTDOWN_ENABLE_EXPLAIN'			=> 'Inschakelen of uitschakelen van de PhpBB Countdown kun je hier doen.',
 	'COUNTDOWN_DIRECTION' 				=> 'Countdown richting',

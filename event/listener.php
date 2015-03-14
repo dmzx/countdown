@@ -36,7 +36,7 @@ class listener implements EventSubscriberInterface
 	{
 		$this->helper = $helper;
 		$this->template = $template;
-		$this->config = $config;		
+		$this->config = $config;
 	}
 
 	public function load_language_on_setup($event)
@@ -48,7 +48,7 @@ class listener implements EventSubscriberInterface
 		);
 		$event['lang_set_ext'] = $lang_set_ext;
 	}
-	
+
 	public function add_page_header_link($event)
 	{
 		$this->template->assign_vars(array(

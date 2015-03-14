@@ -12,7 +12,7 @@ namespace dmzx\countdown\migrations;
 
 class countdown_schema extends \phpbb\db\migration\migration
 {
-	
+
 	public function update_data()
 	{
 		return array(
@@ -23,7 +23,7 @@ class countdown_schema extends \phpbb\db\migration\migration
 			array('config.add', array('countdown_text', '')),
 			array('config.add', array('countdown_complete', '')),
 			array('config.add', array('countdown_version', '1.0.2')),
-		    array('config.add', array('countdown_testmode', '')),
+			array('config.add', array('countdown_testmode', '')),
 			array('config.add', array('countdown_year', '')),
 			array('config.add', array('countdown_offset_enable', '')),
 			array('config.add', array('countdown_offset', '')),

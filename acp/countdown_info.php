@@ -12,9 +12,9 @@ namespace dmzx\countdown\acp;
 
 class countdown_info
  {
-    function module()
-    {
-         return array(
+	function module()
+	{
+		 return array(
 			'filename'	=> '\dmzx\countdown\acp\countdown_module',
 			'title'		=> 'ACP_COUNTDOWN',
 			'modes'		=> array(

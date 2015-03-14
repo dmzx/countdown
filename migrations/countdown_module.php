@@ -12,15 +12,15 @@ namespace dmzx\countdown\migrations;
 
 class countdown_module extends \phpbb\db\migration\migration
 {
-	
+
 	public function update_data()
 	{
 		return array(
-		    array('module.add', array('acp', 'ACP_CAT_DOT_MODS', 'ACP_COUNTDOWN')),
+			array('module.add', array('acp', 'ACP_CAT_DOT_MODS', 'ACP_COUNTDOWN')),
 			array('module.add', array(
 			'acp', 'ACP_COUNTDOWN', array(
 			'module_basename'	=> '\dmzx\countdown\acp\countdown_module', 'modes'	  => array('config'),
-		       ),
+			   ),
 			)),
 		);
 	}

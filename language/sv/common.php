@@ -9,7 +9,6 @@
 *
 */
 
-
 /**
 * DO NOT CHANGE
 */
@@ -56,14 +55,14 @@ $lang = array_merge($lang, array(
 	'UNINSTALL_COUNTDOWN_CONFIRM'		=> 'Är du redo att avinstallera tillägget phpBB Countdown? Alla inställningar och all data kommer att avlägsnas!',
 	'UPDATE_COUNTDOWN'					=> 'Uppdatera phpBB Countdown',
 	'UPDATE_COUNTDOWN_CONFIRM'			=> 'Är du redo att uppdatera tillägget phpBB Countdown?',
-		
+
 	'ACP_COUNTDOWN_CONFIG'				=> 'phpBB Countdown',
 	'ACP_COUNTDOWN_CONFIG_EXPLAIN'		=> 'Denna konfigureringssida är för tillägget phpBB Countdown av <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a>. Autor Stoker.',
 	'COUNTDOWN_VERSION'					=> 'Version',
 	'COUNTDOWN_DONATE'					=> '<a href="http://www.phpbb3bbcodes.com/donate.php"><strong>Donera</strong></a> gärna om du tycker om detta tillägg!',
-	'ACP_COUNTDOWN_CONFIG_SET'			=> 'Konfigurering',	
-	'COUNTDOWN_CONFIG_SAVED'			=> 'Inställningarna för phpBB Countdown har sparats',	
-		
+	'ACP_COUNTDOWN_CONFIG_SET'			=> 'Konfigurering',
+	'COUNTDOWN_CONFIG_SAVED'			=> 'Inställningarna för phpBB Countdown har sparats',
+
 	'COUNTDOWN_ENABLE'					=> 'Aktivera countdown',
 	'COUNTDOWN_ENABLE_EXPLAIN'			=> 'Aktivera eller deaktivera phpBB Countdown här',
 	'COUNTDOWN_DIRECTION' 				=> 'Countdown håll',

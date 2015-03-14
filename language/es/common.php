@@ -8,7 +8,6 @@
 *
 */
 
-
 /**
 * DO NOT CHANGE
 */
@@ -55,14 +54,14 @@ $lang = array_merge($lang, array(
 	'UNINSTALL_COUNTDOWN_CONFIRM'		=> '¿Esta preparado para desinstalar Cuenta Atrás phpBB? ¡Todos los ajustes y datos guardados por esta extensión serán eliminados!',
 	'UPDATE_COUNTDOWN'					=> 'Actualizar Cuenta Atrás phpBB',
 	'UPDATE_COUNTDOWN_CONFIRM'			=> '¿Esta preparado para actualizar la extensión Cuenta Atrás phpBB?',
-		
+
 	'ACP_COUNTDOWN_CONFIG'				=> 'Cuenta Atrás phpBB',
 	'ACP_COUNTDOWN_CONFIG_EXPLAIN'		=> 'Esta es la página de configuración de la extensión Cuenta Atrás por <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a>. Autor Stoker.',
 	'COUNTDOWN_VERSION'					=> 'Versión',
 	'COUNTDOWN_DONATE'					=> 'Por favor, considere hacer una <a href="http://www.phpbb3bbcodes.com/donate.php"><strong>Donación</strong></a> si le gusta la Extensión',
-	'ACP_COUNTDOWN_CONFIG_SET'			=> 'Configuracón',	
-	'COUNTDOWN_CONFIG_SAVED'			=> 'Ajustes de Cuenta Atrás guardados',	
-		
+	'ACP_COUNTDOWN_CONFIG_SET'			=> 'Configuracón',
+	'COUNTDOWN_CONFIG_SAVED'			=> 'Ajustes de Cuenta Atrás guardados',
+
 	'COUNTDOWN_ENABLE'					=> 'Habilitar Cuenta Atrás',
 	'COUNTDOWN_ENABLE_EXPLAIN'			=> 'Habilitar o Deshabilitar la Cuenta Atrás phpBB aquí',
 	'COUNTDOWN_DIRECTION' 				=> 'Dirección de Cuenta Atrás',

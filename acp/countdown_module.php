@@ -37,8 +37,8 @@ var $u_action;
 			$config->set('countdown_offset_enable', $request->variable('countdown_offset_enable', 0));
 			$config->set('countdown_year', $request->variable('countdown_year', 0));
 			$config->set('countdown_month', $request->variable('countdown_month', 0));
-			$config->set('countdown_text', $request->variable('countdown_text', ''));
-			$config->set('countdown_complete', $request->variable('countdown_complete', ''));
+			$config->set('countdown_text', utf8_normalize_nfc($request->variable('countdown_text', '', true)));
+			$config->set('countdown_complete', utf8_normalize_nfc($request->variable('countdown_complete', '', true)));
 
 			trigger_error($user->lang['COUNTDOWN_CONFIG_SAVED'] . adm_back_link($this->u_action));
 		}

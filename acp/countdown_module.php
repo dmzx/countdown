@@ -35,6 +35,7 @@ var $u_action;
 			$config->set('countdown_direction', $request->variable('countdown_direction', 0));
 			$config->set('countdown_date', $request->variable('countdown_date', ''));
 			$config->set('countdown_offset_enable', $request->variable('countdown_offset_enable', 0));
+			$config->set('countdown_offset', $request->variable('countdown_offset', ''));
 			$config->set('countdown_year', $request->variable('countdown_year', 0));
 			$config->set('countdown_month', $request->variable('countdown_month', 0));
 			$config->set('countdown_text', utf8_normalize_nfc($request->variable('countdown_text', '', true)));

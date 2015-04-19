@@ -26,7 +26,7 @@
 	"extra": {
 		"display-name": "PhpBB Countdown",
 		"soft-require": {
-		   "phpbb/phpbb": "3.1.*"
+			"phpbb/phpbb": "3.1.*"
 		},
 		"version-check": {
 			"host": "www.phpbb.com",

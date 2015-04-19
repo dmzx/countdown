@@ -80,7 +80,7 @@ $lang = array_merge($lang, array(
 	'COUNTDOWN_MONTH'	 				=> 'Mois du compte à rebours',
 	'COUNTDOWN_MONTH_EXPLAIN' 			=> 'Si activé, les mois seront affichés dans le compte à rebours.',
 	'COUNTDOWN_OFFSET_ENABLE' 			=> 'Fuseau horaire du compte à rebours',
-	'COUNTDOWN_OFFSET_ENABLE_EXPLAIN' 	=> 'Si activé, le fuseau horaire sera affiché dans le compte à rebours.',
+	'COUNTDOWN_OFFSET_ENABLE_EXPLAIN' 	=> 'Si activé, le fuseau horaire sera pris en compte dans le compte à rebours.',
 	'COUNTDOWN_OFFSET' 					=> 'Paramètres du fuseau horaire',
-	'COUNTDOWN_OFFSET_EXPLAIN'			=> 'Si vous souhaitez utiliser un fuseau horaire particulier pour tous les utilisateurs vous pouvez le saisir ici. Par exemple une valeur de 4 équivaut à « UTC+04:00 » pour Océan Indien/Réunion ou encore une valeur de -4 équivaut à « UTC-04:00 » pour Amérique/Guadeloupe.',
+	'COUNTDOWN_OFFSET_EXPLAIN'			=> 'Permet d’utiliser un fuseau horaire spécifique pour tous les utilisateurs vous pouvez le saisir ici. Par exemple une valeur de 4 équivaut à « UTC+04:00 » pour Océan Indien/Réunion ou encore une valeur de -4 équivaut à « UTC-04:00 » pour Amérique/Guadeloupe.',
 ));

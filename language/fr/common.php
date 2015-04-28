@@ -39,12 +39,12 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'COUNT_YEARS'				=> 'Années',
-	'COUNT_MONTHS'				=> 'Mois',
-	'COUNT_DAYS'				=> 'Jours',
-	'COUNT_HOURS'				=> 'Heures',
-	'COUNT_MINUTES'				=> 'Minutes',
-	'COUNT_SECONDS'				=> 'Secondes',
+	'COUNT_YEARS'				=> 'années',
+	'COUNT_MONTHS'				=> 'mois',
+	'COUNT_DAYS'				=> 'jours',
+	'COUNT_HOURS'				=> 'heures',
+	'COUNT_MINUTES'				=> 'minutes',
+	'COUNT_SECONDS'				=> 'secondes',
 	'COUNT_DOWNCOUNT'			=> 'Décroissant',
 	'COUNT_UPCOUNT'				=> 'Croissant',
 	'INSTALL_COUNTDOWN'					=> 'Installer l’extension « PhpBB Countdown »',

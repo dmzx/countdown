@@ -8,7 +8,6 @@
 * @翻譯者 竹貓星球 http://phpbb-tw.net/
 */
 
-
 /**
 * DO NOT CHANGE
 */
@@ -55,14 +54,14 @@ $lang = array_merge($lang, array(
 	'UNINSTALL_COUNTDOWN_CONFIRM'		=> '您準備好要解除安裝倒數計時擴充功能嗎？這個擴充功能已經儲存的設定和資料將被全部移除！',
 	'UPDATE_COUNTDOWN'					=> '更新倒數計時',
 	'UPDATE_COUNTDOWN_CONFIRM'			=> '您準備好要更新倒數計時擴充功能嗎？',
-		
+
 	'ACP_COUNTDOWN_CONFIG'				=> '倒數計時',
 	'ACP_COUNTDOWN_CONFIG_EXPLAIN'		=> '這是倒數計時擴充功能的設定頁面，由 <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a> 作者 Stoker 製作。',
 	'COUNTDOWN_VERSION'					=> '版本',
 	'COUNTDOWN_DONATE'					=> '如果您喜歡這個擴充功能，請考慮 <a href="http://www.phpbb3bbcodes.com/donate.php"><strong>捐款</strong></a>。',
-	'ACP_COUNTDOWN_CONFIG_SET'			=> '基本組態',	
-	'COUNTDOWN_CONFIG_SAVED'			=> '倒數計時之設定已儲存',	
-		
+	'ACP_COUNTDOWN_CONFIG_SET'			=> '基本組態',
+	'COUNTDOWN_CONFIG_SAVED'			=> '倒數計時之設定已儲存',
+
 	'COUNTDOWN_ENABLE'					=> '啟用倒數計時',
 	'COUNTDOWN_ENABLE_EXPLAIN'			=> '在此，可以啟用或停用倒數計時。',
 	'COUNTDOWN_DIRECTION' 				=> '倒數計時之方向',

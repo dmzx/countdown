@@ -43,6 +43,7 @@ var $u_action;
 
 			trigger_error($user->lang['COUNTDOWN_CONFIG_SAVED'] . adm_back_link($this->u_action));
 		}
+
 		$template->assign_vars(array(
 			'COUNTDOWN_VERSION'			=> (isset($config['countdown_version'])) ? $config['countdown_version'] : '',
 			'COUNTDOWN_ENABLE'			=> (!empty($config['countdown_enable'])) ? true : false,

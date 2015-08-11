@@ -9,7 +9,6 @@
 * Translated By : Bassel Taha Alhitary - www.alhitary.net
 */
 
-
 /**
 * DO NOT CHANGE
 */
@@ -56,14 +55,14 @@ $lang = array_merge($lang, array(
 	'UNINSTALL_COUNTDOWN_CONFIRM'		=> 'هل أنت مستعد لإزالة الإضافة : التوقيت التنازلي ؟ سيتم حذف جميع الإعدادات والبيانات الخاصة بهذه الإضافة !',
 	'UPDATE_COUNTDOWN'					=> 'تحديث التوقيت التنازلي',
 	'UPDATE_COUNTDOWN_CONFIRM'			=> 'هل أنت مستعد لتحديث الإضافة : التوقيت التنازلي ؟',
-		
+
 	'ACP_COUNTDOWN_CONFIG'				=> 'التوقيت التنازلي',
-	'ACP_COUNTDOWN_CONFIG_EXPLAIN'		=> 'من هنا تستطيع ضبط الإعدادات  للإضافة : التوقيت التنازلي ( المبرمج : أوثر ستوكر. الموقع : <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a> ).',
+	'ACP_COUNTDOWN_CONFIG_EXPLAIN'		=> 'من هنا تستطيع ضبط الإعدادات	للإضافة : التوقيت التنازلي ( المبرمج : أوثر ستوكر. الموقع : <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a> ).',
 	'COUNTDOWN_VERSION'					=> 'الإصدار ',
 	'COUNTDOWN_DONATE'					=> 'لو أعجبتك هذه الإضافة , نرجوا <a href="http://www.phpbb3bbcodes.com/donate.php"><strong>التبرع</strong></a> لإستمرار الدعم وتطوير هذه الإضافة.',
-	'ACP_COUNTDOWN_CONFIG_SET'			=> 'الضبط',	
-	'COUNTDOWN_CONFIG_SAVED'			=> 'تم حفظ الإعدادات بنجاح',	
-		
+	'ACP_COUNTDOWN_CONFIG_SET'			=> 'الضبط',
+	'COUNTDOWN_CONFIG_SAVED'			=> 'تم حفظ الإعدادات بنجاح',
+
 	'COUNTDOWN_ENABLE'					=> 'تفعيل ',
 	'COUNTDOWN_ENABLE_EXPLAIN'			=> 'اختيارك "نعم" يعني تفعيل التوقيت التنازلي',
 	'COUNTDOWN_DIRECTION' 				=> 'نوع التوقيت ',

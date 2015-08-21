@@ -40,7 +40,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'COUNT_YEARS'				=> 'Anos',
 	'COUNT_MONTHS'				=> 'Meses',
-	'COUNT_DAYS'				=> 'Días',
+	'COUNT_DAYS'				=> 'Dias',
 	'COUNT_HOURS'				=> 'Horas',
 	'COUNT_MINUTES'				=> 'Minutos',
 	'COUNT_SECONDS'				=> 'Segundos',

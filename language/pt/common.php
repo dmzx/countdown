@@ -81,5 +81,5 @@ $lang = array_merge($lang, array(
 	'COUNTDOWN_OFFSET_ENABLE' 			=> 'Ativar horaria zona ',
 	'COUNTDOWN_OFFSET_ENABLE_EXPLAIN' 	=> 'Ativar o Desativar horaria zona aqui',
 	'COUNTDOWN_OFFSET' 					=> 'Ajustes de horaria zona ',
-	'COUNTDOWN_OFFSET_EXPLAIN'			=> 'Se você quiser usar um fuso horário específico para todos os usuários que você pode digitá-lo aqui.<br />Like "-6" para horario Central Standard  ou "4" para horario Gulf Standard '',
+	'COUNTDOWN_OFFSET_EXPLAIN'			=> 'Se você quiser usar um fuso horário específico para todos os usuários que você pode digitá-lo aqui.<br />Like "-6" para horario Central Standard  ou "4" para horario Gulf Standard ',
 ));

@@ -20,9 +20,9 @@ span.cd-time{
 	color:#516091;
 }
 
-.navbar {
-    background-color: #dfe9f7;
-    width: 97%;
-    float: right;
-    margin-right: 7px;
+.navbar.timecount {
+	background-color: #dfe9f7;
+	width: 97%;
+	float: right;
+	margin-right: 7px;
 }

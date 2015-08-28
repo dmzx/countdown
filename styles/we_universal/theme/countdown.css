@@ -23,6 +23,6 @@ span.cd-time{
 	text-transform: uppercase;
 }
 
-.navbar {
+.navbar.timecount {
 	background-color: #4c4c4c;
 }

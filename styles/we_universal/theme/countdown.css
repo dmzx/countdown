@@ -9,11 +9,12 @@
 
 
 .timecount{
-	min-height:32px;
+	min-height:28px;
 	color:#FF8000;
 	font-size:18px;
 	text-align:center;
 	margin-top:4px;
+	padding-top:6px;
 }
 
 span.cd-time{

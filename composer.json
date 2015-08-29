@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "The PhpBB Countdown extension display a countdown in your forum header, just below the navbar. It can be configured in ACP. You can enable/disable the countdown and set it to count down or count up. You can also set the date and a text displayed before the countdown and a text that will replace the countdown when finished.",
 	"homepage": "http://www.dmzx-web.net",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"time": "2015-02-07",
 	"keywords": ["phpbb", "extension", "countdown"],
 	"license": "GPL-2.0",
@@ -26,7 +26,7 @@
 	"extra": {
 		"display-name": "PhpBB Countdown",
 		"soft-require": {
-		   "phpbb/phpbb": "3.1.*"
+			"phpbb/phpbb": "3.1.*"
 		},
 		"version-check": {
 			"host": "www.phpbb.com",

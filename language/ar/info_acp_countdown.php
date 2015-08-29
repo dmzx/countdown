@@ -6,6 +6,7 @@
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 * @Author Stoker - http://www.phpbb3bbcodes.com
 *
+* Translated By : Bassel Taha Alhitary - www.alhitary.net
 */
 
 if (!defined('IN_PHPBB'))
@@ -18,6 +19,7 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'ACP_COUNTDOWN'		 => 'PhpBB Countdown',
-	'COUNTDOWN_CONFIG'		=> 'PhpBB Countdown Einstellung',
+	'ACP_COUNTDOWN'			=> 'التوقيت التنازلي',
+	'COUNTDOWN_CONFIG'		=> 'الإعدادات',
 ));
+

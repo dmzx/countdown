@@ -9,14 +9,22 @@
 
 
 .timecount{
-	min-height:26px;
 	color:#c21017;
-	font-size:18px;
+	font-size:16px;
+	font-family: "Exocet Blizzard","Palatino Linotype",Times,serif;
 	text-align:center;
 	margin-top:4px;
-	padding-top:6px;
 }
 
 span.cd-time{
-	color:#105289;
+	color:#888;
+}
+
+
+.navbar.timecount {
+	background-color: rgba(37, 37, 37, 0.9);
+	border: 1px solid #444;
+	width: 85%;
+	margin-left: 60px;
+	border-radius: 0px;
 }

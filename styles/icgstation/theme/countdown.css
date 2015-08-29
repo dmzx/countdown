@@ -14,9 +14,15 @@
 	font-size:18px;
 	text-align:center;
 	margin-top:4px;
-	padding-top:6px;
 }
 
 span.cd-time{
-	color:#105289;
+	color:#516091;
+}
+
+.navbar.timecount {
+	background-color: #dfe9f7;
+	width: 97%;
+	float: right;
+	margin-right: 7px;
 }

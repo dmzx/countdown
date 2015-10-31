@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* @package phpBB Extension - PhpBB Countdown
+* @package phpBB Extension - phpBB Countdown
 * @copyright (c) 2015 dmzx - http://www.dmzx-web.net
 * Swedish translation by Holger (http://www.maskinisten.net)
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2

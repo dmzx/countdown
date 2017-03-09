@@ -4,7 +4,6 @@
 * @package phpBB Extension - phpBB Countdown
 * @copyright (c) 2015 dmzx - http://www.dmzx-web.net
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
-* @Author Stoker - http://www.phpbb3bbcodes.com
 *
 */
 
@@ -12,51 +11,28 @@ namespace dmzx\countdown\acp;
 
 class countdown_module
 {
-var $u_action;
+	public $u_action;
 
 	function main($id, $mode)
 	{
-		global $db, $user, $auth, $template, $cache, $request;
-		global $config, $phpbb_root_path, $phpbb_admin_path, $phpEx;
+		global $phpbb_container, $user;
 
-		$this->tpl_name = 'acp_countdown_config';
-		$this->page_title = $user->lang['COUNTDOWN_CONFIG'];
-		add_form_key('acp_countdown_config');
+		// Get an instance of the admin controller
+		$admin_controller = $phpbb_container->get('dmzx.countdown.admin.controller');
 
-		$submit = $request->is_set_post('submit');
-		if ($submit)
+		// Make the $u_action url available in the admin controller
+		$admin_controller->set_page_url($this->u_action);
+
+		switch ($mode)
 		{
-			if (!check_form_key('acp_countdown_config'))
-			{
-				trigger_error('FORM_INVALID');
-			}
-			$config->set('countdown_enable', $request->variable('countdown_enable', 0));
-			$config->set('countdown_testmode', $request->variable('countdown_testmode', 0));
-			$config->set('countdown_direction', $request->variable('countdown_direction', 0));
-			$config->set('countdown_date', $request->variable('countdown_date', ''));
-			$config->set('countdown_offset_enable', $request->variable('countdown_offset_enable', 0));
-			$config->set('countdown_offset', $request->variable('countdown_offset', ''));
-			$config->set('countdown_year', $request->variable('countdown_year', 0));
-			$config->set('countdown_month', $request->variable('countdown_month', 0));
-			$config->set('countdown_text', utf8_normalize_nfc($request->variable('countdown_text', '', true)));
-			$config->set('countdown_complete', utf8_normalize_nfc($request->variable('countdown_complete', '', true)));
-
-			trigger_error($user->lang['COUNTDOWN_CONFIG_SAVED'] . adm_back_link($this->u_action));
+			case 'config':
+				// Load a template from adm/style for our ACP page
+				$this->tpl_name = 'acp_countdown_config';
+				// Set the page title for our ACP page
+				$this->page_title = $user->lang['ACP_COUNTDOWN_CONFIG'];
+				// Load the display options handle in the admin controller
+				$admin_controller->display_options();
+			break;
 		}
-
-		$template->assign_vars(array(
-			'COUNTDOWN_VERSION'			=> (isset($config['countdown_version'])) ? $config['countdown_version'] : '',
-			'COUNTDOWN_ENABLE'			=> (!empty($config['countdown_enable'])) ? true : false,
-			'COUNTDOWN_TESTMODE'		=> (!empty($config['countdown_testmode'])) ? true : false,
-			'COUNTDOWN_DIRECTION'		=> (!empty($config['countdown_direction'])) ? true : false,
-			'COUNTDOWN_DATE'			=> (isset($config['countdown_date'])) ? $config['countdown_date'] : '',
-			'COUNTDOWN_OFFSET_ENABLE'	=> (!empty($config['countdown_offset_enable'])) ? true : false,
-			'COUNTDOWN_OFFSET'			=> (isset($config['countdown_offset'])) ? $config['countdown_offset'] : '',
-			'COUNTDOWN_YEAR'			=> (!empty($config['countdown_year'])) ? true : false,
-			'COUNTDOWN_MONTH'			=> (!empty($config['countdown_month'])) ? true : false,
-			'COUNTDOWN_TEXT'			=> (isset($config['countdown_text'])) ? $config['countdown_text'] : '',
-			'COUNTDOWN_COMPLETE'		=> (isset($config['countdown_complete'])) ? $config['countdown_complete'] : '',
-			'U_ACTION'					=> $this->u_action,
-		));
 	}
 }

@@ -1,77 +1,115 @@
 <!-- INCLUDE overall_header.html -->
-	<h1>{L_ACP_COUNTDOWN_CONFIG}</h1>
 
-	<p>{L_ACP_COUNTDOWN_CONFIG_EXPLAIN}<br />{L_COUNTDOWN_DONATE}<br />{L_COUNTDOWN_VERSION} {COUNTDOWN_VERSION}</p>
+<h1>{L_COUNTDOWN_TITLE}</h1>
 
-	<form id="acp_quotes_config" method="post" action="{U_ACTION}">
+<p><img src="https://img.shields.io/badge/{{ lang('Version') }}-{{ COUNTDOWN_VERSION }}-green.svg?style=plastic" /></p>
 
+<form id="acp_quotes_config" method="post" action="{U_ACTION}">
 	<fieldset>
-	<legend>{L_ACP_COUNTDOWN_CONFIG_SET}</legend>
-	<dl>
-		<dt><label for="countdown_enable">{L_COUNTDOWN_ENABLE}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_ENABLE_EXPLAIN}</span></dt>
-		<dd><label><input type="radio" class="radio" name="countdown_enable" value="1"<!-- IF COUNTDOWN_ENABLE --> id="countdown_enable" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-		<label><input type="radio" class="radio" name="countdown_enable" value="0"<!-- IF not COUNTDOWN_ENABLE --> id="countdown_enable" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
-	</dl>
-	<dl>
-		<dt><label for="countdown_testmode">{L_COUNTDOWN_TESTMODE}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_TESTMODE_EXPLAIN}</span></dt>
-		<dd><label><input type="radio" class="radio" name="countdown_testmode" value="1"<!-- IF COUNTDOWN_TESTMODE --> id="countdown_testmode" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-		<label><input type="radio" class="radio" name="countdown_testmode" value="0"<!-- IF not COUNTDOWN_TESTMODE --> id="countdown_testmode" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
-	</dl>
-	<dl>
-		<dt><label for="countdown_direction">{L_COUNTDOWN_DIRECTION}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_DIRECTION_EXPLAIN}</span></dt>
-		<dd><label><input type="radio" class="radio" name="countdown_direction" value="1"<!-- IF COUNTDOWN_DIRECTION --> id="countdown_direction" checked="checked"<!-- ENDIF --> /> {L_COUNT_DOWNCOUNT}</label>
-		<label><input type="radio" class="radio" name="countdown_direction" value="0"<!-- IF not COUNTDOWN_DIRECTION --> id="countdown_direction" checked="checked"<!-- ENDIF --> /> {L_COUNT_UPCOUNT}</label></dd>
-	</dl>
-	<dl>
-		<dt><label for="countdown_date">{L_COUNTDOWN_DATE}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_DATE_EXPLAIN}</span></dt>
-		<dd><input name="countdown_date" type="text" id="countdown_date" value="{COUNTDOWN_DATE}" length="100" maxlength="255" /></dd>
-	</dl>
-	<dl>
-		<dt><label for="countdown_offset_enable">{L_COUNTDOWN_OFFSET_ENABLE}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_OFFSET_ENABLE_EXPLAIN}</span></dt>
-		<dd><label><input type="radio" class="radio" name="countdown_offset_enable" value="1"<!-- IF COUNTDOWN_OFFSET_ENABLE --> id="countdown_offset_enable" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-		<label><input type="radio" class="radio" name="countdown_offset_enable" value="0"<!-- IF not COUNTDOWN_OFFSET_ENABLE --> id="countdown_offset_enable" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
-	</dl>
-	<dl>
-		<dt><label for="countdown_offset">{L_COUNTDOWN_OFFSET}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_OFFSET_EXPLAIN}</span></dt>
-		<dd><input name="countdown_offset" type="text" id="countdown_offset" value="{COUNTDOWN_OFFSET}" length="100" maxlength="255" /></dd>
-	</dl>
-	<dl>
-		<dt><label for="countdown_year">{L_COUNTDOWN_YEAR}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_YEAR_EXPLAIN}</span></dt>
-		<dd><label><input type="radio" class="radio" name="countdown_year" value="1"<!-- IF COUNTDOWN_YEAR --> id="countdown_year" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-		<label><input type="radio" class="radio" name="countdown_year" value="0"<!-- IF not COUNTDOWN_YEAR --> id="countdown_year" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
-	</dl>
-	<dl>
-		<dt><label for="countdown_month">{L_COUNTDOWN_MONTH}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_MONTH_EXPLAIN}</span></dt>
-		<dd><label><input type="radio" class="radio" name="countdown_month" value="1"<!-- IF COUNTDOWN_MONTH --> id="countdown_month" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-		<label><input type="radio" class="radio" name="countdown_month" value="0"<!-- IF not COUNTDOWN_MONTH --> id="countdown_month" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
-	</dl>
-	<dl>
-		<dt><label for="countdown_text">{L_COUNTDOWN_TEXT}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_TEXT_EXPLAIN}</span></dt>
-		<dd><input name="countdown_text" type="text" id="countdown_text" value="{COUNTDOWN_TEXT}" length="100" maxlength="255" /></dd>
-	</dl>
-	<dl>
-		<dt><label for="countdown_complete">{L_COUNTDOWN_COMPLETE}{L_COLON}</label><br />
-		<span>{L_COUNTDOWN_COMPLETE_EXPLAIN}</span></dt>
-		<dd><input name="countdown_complete" type="text" id="countdown_complete" value="{COUNTDOWN_COMPLETE}" length="100" maxlength="255" /></dd>
-	</dl>
-
-	<p class="submit-buttons">
-		<input type="hidden" name="action" value="save" />
-
-		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
-		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
-		{S_FORM_TOKEN}
-	</p>
+		<legend>{L_COUNTDOWN_CONFIG_SET}</legend>
+		<dl>
+			<dt>
+				<label for="countdown_enable">{L_COUNTDOWN_ENABLE}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_ENABLE_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<label><input type="radio" class="radio" name="countdown_enable" value="1"<!-- IF COUNTDOWN_ENABLE --> id="countdown_enable" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label><input type="radio" class="radio" name="countdown_enable" value="0"<!-- IF not COUNTDOWN_ENABLE --> id="countdown_enable" checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="countdown_testmode">{L_COUNTDOWN_TESTMODE}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_TESTMODE_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<label><input type="radio" class="radio" name="countdown_testmode" value="1"<!-- IF COUNTDOWN_TESTMODE --> id="countdown_testmode" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label><input type="radio" class="radio" name="countdown_testmode" value="0"<!-- IF not COUNTDOWN_TESTMODE --> id="countdown_testmode" checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="countdown_direction">{L_COUNTDOWN_DIRECTION}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_DIRECTION_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<label><input type="radio" class="radio" name="countdown_direction" value="1"<!-- IF COUNTDOWN_DIRECTION --> id="countdown_direction" checked="checked"<!-- ENDIF --> /> {L_COUNT_DOWNCOUNT}</label>
+				<label><input type="radio" class="radio" name="countdown_direction" value="0"<!-- IF not COUNTDOWN_DIRECTION --> id="countdown_direction" checked="checked"<!-- ENDIF --> /> {L_COUNT_UPCOUNT}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="countdown_date">{L_COUNTDOWN_DATE}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_DATE_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<input name="countdown_date" type="text" id="countdown_date" value="{COUNTDOWN_DATE}" length="100" maxlength="255" />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="countdown_offset_enable">{L_COUNTDOWN_OFFSET_ENABLE}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_OFFSET_ENABLE_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<label><input type="radio" class="radio" name="countdown_offset_enable" value="1"<!-- IF COUNTDOWN_OFFSET_ENABLE --> id="countdown_offset_enable" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label><input type="radio" class="radio" name="countdown_offset_enable" value="0"<!-- IF not COUNTDOWN_OFFSET_ENABLE --> id="countdown_offset_enable" checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="countdown_offset">{L_COUNTDOWN_OFFSET}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_OFFSET_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<input name="countdown_offset" type="text" id="countdown_offset" value="{COUNTDOWN_OFFSET}" length="100" maxlength="255" />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="countdown_year">{L_COUNTDOWN_YEAR}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_YEAR_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<label><input type="radio" class="radio" name="countdown_year" value="1"<!-- IF COUNTDOWN_YEAR --> id="countdown_year" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label><input type="radio" class="radio" name="countdown_year" value="0"<!-- IF not COUNTDOWN_YEAR --> id="countdown_year" checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="countdown_month">{L_COUNTDOWN_MONTH}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_MONTH_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<label><input type="radio" class="radio" name="countdown_month" value="1"<!-- IF COUNTDOWN_MONTH --> id="countdown_month" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label><input type="radio" class="radio" name="countdown_month" value="0"<!-- IF not COUNTDOWN_MONTH --> id="countdown_month" checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="countdown_text">{L_COUNTDOWN_TEXT}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_TEXT_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<input name="countdown_text" type="text" id="countdown_text" value="{COUNTDOWN_TEXT}" length="100" maxlength="255" />
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="countdown_complete">{L_COUNTDOWN_COMPLETE}{L_COLON}</label><br />
+				<span>{L_COUNTDOWN_COMPLETE_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<input name="countdown_complete" type="text" id="countdown_complete" value="{COUNTDOWN_COMPLETE}" length="100" maxlength="255" />
+			</dd>
+		</dl>
+		<p class="submit-buttons">
+			<input type="hidden" name="action" value="save" />
+			<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+			{S_FORM_TOKEN}
+		</p>
 	</fieldset>
-	</form>
+</form>
 
 <!-- INCLUDE overall_footer.html -->

@@ -1,36 +1,33 @@
 <?php
 /**
 *
-* @package phpBB Extension - PhpBB Countdown
+* @package phpBB Extension - phpBB Countdown
 * @copyright (c) 2015 dmzx - http://www.dmzx-web.net
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
-* @Author Stoker - http://www.phpbb3bbcodes.com
 *
 */
 
 namespace dmzx\countdown\event;
 
-/**
-* @ignore
-*/
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use phpbb\template\template;
+use phpbb\config\config;
 
-/**
-* Event listener
-*/
 class listener implements EventSubscriberInterface
 {
-	protected $helper;
-
+	/** @var template */
 	protected $template;
 
+	/** @var config */
 	protected $config;
 
-	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\config\config $config)
+	public function __construct(
+		template $template,
+		config $config
+	)
 	{
-		$this->helper = $helper;
 		$this->template = $template;
-		$this->config = $config;
+		$this->config 	= $config;
 	}
 
 	static public function getSubscribedEvents()
@@ -54,16 +51,16 @@ class listener implements EventSubscriberInterface
 	public function add_page_header_link($event)
 	{
 		$this->template->assign_vars(array(
-			'COUNTDOWN_ENABLE'			=> $this->config['countdown_enable'] ? true : false,
-			'COUNTDOWN_TESTMODE'		=> $this->config['countdown_testmode'] ? true : false,
-			'COUNTDOWN_DIRECTION'		=> $this->config['countdown_direction'] ? true : false,
-			'COUNTDOWN_DATE'			=> (isset($this->config['countdown_date'])) ? $this->config['countdown_date'] : '',
-			'COUNTDOWN_OFFSET_ENABLE'	=> $this->config['countdown_offset_enable'] ? true : false,
-			'COUNTDOWN_OFFSET'			=> (isset($this->config['countdown_offset'])) ? $this->config['countdown_offset'] : '',
-			'COUNTDOWN_YEAR'			=> $this->config['countdown_year'] ? true : false,
-			'COUNTDOWN_MONTH'			=> $this->config['countdown_month'] ? true : false,
-			'COUNTDOWN_TEXT'			=> (isset($this->config['countdown_text'])) ? $this->config['countdown_text'] : '',
-			'COUNTDOWN_COMPLETE'		=> (isset($this->config['countdown_complete'])) ? $this->config['countdown_complete'] : '',
+			'COUNTDOWN_ENABLE'			=> $this->config['countdown_enable'],
+			'COUNTDOWN_TESTMODE'		=> $this->config['countdown_testmode'],
+			'COUNTDOWN_DIRECTION'		=> $this->config['countdown_direction'],
+			'COUNTDOWN_DATE'			=> $this->config['countdown_date'],
+			'COUNTDOWN_OFFSET_ENABLE'	=> $this->config['countdown_offset_enable'],
+			'COUNTDOWN_OFFSET'			=> $this->config['countdown_offset'],
+			'COUNTDOWN_YEAR'			=> $this->config['countdown_year'],
+			'COUNTDOWN_MONTH'			=> $this->config['countdown_month'],
+			'COUNTDOWN_TEXT'			=> $this->config['countdown_text'],
+			'COUNTDOWN_COMPLETE'		=> $this->config['countdown_complete'],
 		));
 	}
 }

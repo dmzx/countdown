@@ -58,5 +58,5 @@ $lang = array_merge($lang, array(
 	'COUNTDOWN_OFFSET_ENABLE' 			=> 'Enable timezone',
 	'COUNTDOWN_OFFSET_ENABLE_EXPLAIN' 	=> 'Enable or disable the timezone here.',
 	'COUNTDOWN_OFFSET' 					=> 'Timezone settings',
-	'COUNTDOWN_OFFSET_EXPLAIN'			=> 'If you want to use a specific timezone for all users you can type it here.<br />Like "-6" for Central Standard Time and "4" for Gulf Standard Time.',
+	'COUNTDOWN_OFFSET_EXPLAIN'			=> 'If you want to use a specific timezone for all users you can type it here.<br />Like “-6” for Central Standard Time and “4” for Gulf Standard Time.',
 ));

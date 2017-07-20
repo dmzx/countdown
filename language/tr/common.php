@@ -1,8 +1,7 @@
 <?php
 /**
 *
-* @version $Id$
-* @package phpBB Extension - phpBB Countdown (deutsch)
+* @package phpBB Extension - phpBB Countdown
 * @copyright (c) 2015 dmzx - http://www.dmzx-web.net
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -34,14 +33,14 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 //
 // Some characters you may want to copy&paste:
-// ‚ ‘ ’ « » „ “ ” …
+// ’ » “ ” …
 //
 
 $lang = array_merge($lang, array(
-	'COUNT_YEARS'				=> 'Jahre',
-	'COUNT_MONTHS'				=> 'Monate',
-	'COUNT_DAYS'				=> 'Tage',
-	'COUNT_HOURS'				=> 'Stunden',
-	'COUNT_MINUTES'				=> 'Minuten',
-	'COUNT_SECONDS'				=> 'Sekunden',
+	'COUNT_YEARS'				=> 'Yıl',
+	'COUNT_MONTHS'				=> 'Ay',
+	'COUNT_DAYS'				=> 'Gün',
+	'COUNT_HOURS'				=> 'Saat',
+	'COUNT_MINUTES'				=> 'Dakika',
+	'COUNT_SECONDS'				=> 'Saniye',
 ));

@@ -1,10 +1,9 @@
 <?php
 /**
 *
-* @package phpBB Extension - PhpBB Countdown
+* @package phpBB Extension - phpBB Countdown
 * @copyright (c) 2015 dmzx - http://www.dmzx-web.net
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
-* @Author Stoker - http://www.phpbb3bbcodes.com
 *
 */
 
@@ -12,7 +11,6 @@ namespace dmzx\countdown\migrations;
 
 class countdown_schema extends \phpbb\db\migration\migration
 {
-
 	public function update_data()
 	{
 		return array(
